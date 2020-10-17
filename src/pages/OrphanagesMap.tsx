@@ -48,7 +48,7 @@ export default function OrphanagesMap() {
                     2 orfanatos encontrados
           </Text>
                 <TouchableOpacity style={styles.createOrphanageButton} onPress={() => { }}>
-                    <Feather name='plus' />
+                    <Feather style={styles.createOrphanageButtonText} name='plus' />
                 </TouchableOpacity>
             </View>
         </View>
@@ -104,4 +104,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    createOrphanageButtonText: {
+        color: '#fff',
+    }
 });
